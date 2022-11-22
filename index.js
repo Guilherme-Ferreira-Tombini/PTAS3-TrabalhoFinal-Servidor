@@ -1,12 +1,8 @@
-// JWT
-require("dotenv-safe").config();
 const cors = require('cors');
-//const criptografa= require('./crypto_');
 
-var cookieParser = require('cookie-parser')
+var cookieParser = require('cookie-parser');
 
 const express = require('express');
-//const { usuario } = require('./models');
 const { produto } = require('./models');
 
 const app = express();
