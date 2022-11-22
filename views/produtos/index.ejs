@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/produtos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>Trabalho - PTAS3</h1>
+        <div class="itens">
+            <a href="./inscrever">Cadastrar Produtos</a>
+            <a href="/">Pagina Inicial</a>
+        </div>
+       </header>
+    
+       <main>
+       <div class='card'>
+       <h1>Usuários cadastrados</h1>
+
+          <% resultado.forEach (function(produto){ %>
+            <div class="card2">
+              <img src='<%= produto.titulo %>' style="height: 100px;width: 100px;">
+              <p><%= produto.titulo %></p>
+              <p><%= produto.descricao %></p> 
+              <p><%= produto.preco %></p>     
+            </div>
+         <% }); %>
+    
+       </main>
+    
+       <footer>
+        Guilherme Ferreira Tombini - INFO 6
+       </footer>
+    </div>
+
+   
+</body>
+</html>

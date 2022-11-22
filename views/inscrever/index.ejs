@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/inscrever.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Trabalho - PTAS3</h1>
+            <div class="itens">
+                <a href="./produtos">Listar Produtos</a>
+                <a href="/">Pagina Inicial</a>
+            </div>
+           </header>
+    
+       <main>
+       <div class='card'>
+        <h1>Cadastro</h1>
+       <form action="/cadastro" method="post">
+        <span class="titulo" for="titulo">Titulo do produto</span>
+            <input type="text" name="titulo" id="titulo" placeholder="Digite o titulo do produto">
+           <span class="descricao" for="descricao">Descrição do produto</span>
+           <textarea style = "margin:10px;" id="descricao" name="descricao" rows="4" cols="50" placeholder="Digite a descrição do produto"></textarea>
+           <!-- <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição do produto"> -->
+            <span class="preco" for="preco">Preço do produto</span>
+            <input type="number" name="preco" id="preco">
+            <span class="imagem" for="imagem">Imagens do produto</span>
+            <input type="text" name="imagem" id="imagem">
+         
+        <button type="submit">Cadastrar</button>
+       </form>
+       </div>
+       </div>
+    
+       </main>
+    
+       <footer>
+        Guilherme Ferreira Tombini - INFO 6
+       </footer>
+    </div>
+
+   
+</body>
+</html>
