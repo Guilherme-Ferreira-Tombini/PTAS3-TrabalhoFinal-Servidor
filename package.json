@@ -4,8 +4,8 @@
   "description": "Trabalho de PTAS3 - Servidor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Guilherme Ferreira Tombini e Rafael de Andrade Albuquerque dos Santos",
   "license": "ISC",
