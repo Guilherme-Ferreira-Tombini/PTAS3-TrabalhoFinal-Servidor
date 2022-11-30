@@ -39,12 +39,6 @@ app.get('/produtos', async function(req, res){
   res.json(resultado);
 })
 
-// listar produtos pelo ID em JSON
-app.get("/produtos/:id", async function(req, res) {
-  const id = await produto.findByPk(req.params.id);
-  res.json(id);
- });
-
 // Deletar produtos pelo ID
  app.delete("/produtos/:id", async function(req, res) {
   var resultado = produto.destroy({ where: { id: req.params.id }});
